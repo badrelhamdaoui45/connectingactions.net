@@ -1,0 +1,351 @@
+/*
+   Theme Name: Connecting Actions
+   Theme URI: http://connectingactions.com
+   Description: This is a custom child theme based on Zerif Pro
+   Author: Alexander Hohenecker
+   URI: http://code-r.at
+   Template: zerif-lite
+   Version: 0.1
+   */
+
+BODY.custom-background { background-size: cover; }
+
+.latesnews-content p {
+   display: none !important;
+}
+.zerif-copyright-box {
+   display: none !important;
+}
+DIV#comments {
+   display: none !important;
+}
+
+/* one color per section */
+#focus span .focus-box .service-icon:hover, #focus span .focus-box .service-icon:focus {
+    border: solid 10px #3ab0e2 !important;
+}
+#focus span .focus-box .red-border-bottom:before {
+    background: #3ab0e2 !important;
+}
+.our-team .row > span .red-border-bottom:before {
+    background: #34d293 !important;
+}
+#carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
+	background: #f7d861 !important;
+}
+
+/* shrink icons for WHAT WE DO */
+#focus span .focus-box .service-icon .pixeden {
+  background-size: contain !important;
+}
+
+article h3 {
+	line-height: 1.2em;
+}
+.testimonial {
+	background: #404040;
+}
+.purchase-now {
+	background: #555;
+}
+
+/* ebook popup */
+DIV#disable_overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top:0;
+  left:0;
+}
+DIV.ca-popup {
+  background: white;
+  padding: 1em;
+  position: fixed;
+  width: 700px;
+  height: 420px;
+  z-index: 1500;
+  margin-left: -350px;
+  margin-top: -210px;
+  top: 50%;
+  left: 50%;
+  border-radius:0.5em;
+}
+DIV.ca-popup SPAN.close-popup {
+  float: right;
+  cursor: pointer;
+}
+DIV.ca-popup IMG {
+  clear: both;
+  max-width: 250px;
+  float: left;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+DIV.ca-popup P.footer { clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-basis: fit-content;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+DIV.ca-popup P.footer a {
+  flex-basis: 50;
+}
+
+@media screen and (max-width: 720px) {
+  DIV.ca-popup {
+    position:absolute;
+    top:1em; left: 2%;
+    margin: 0;
+    max-width: 96%;
+    height: auto;
+  }
+  DIV.ca-popup H1 {
+    font-size: 120%;
+  }
+  DIV.ca-popup IMG {
+    float: none;
+    padding-top:0;
+  }
+}
+/*
+#client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
+    width: 47% !important;
+}
+@media (max-width: 992px) {
+	#client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
+    width: 100% !important;
+	}
+}*/
+
+.intro-text SMALL {
+	line-height: 1.5em;
+}
+
+.about-us .col-lg-6 P {
+  padding-left: 0.5em;
+}
+
+@media screen and (max-width:992px) {
+	.about-us .big-intro {
+		font-size: 44px;
+	}
+  .about-us .col-lg-6 P {
+    padding-left: 0;
+  }
+}
+
+/** MIDDLE EAST DIALOGUE announcement **/
+
+SECTION#ribbon_bottom.middle-east {
+  background: #23282d;
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+  border: 2em solid #23282d;
+  border-width: 2em 0;
+  color: white;
+  padding: 4em 1em;
+}
+SECTION#ribbon_bottom IMG.logo {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+SECTION#ribbon_bottom P {
+  max-width: 1000px;
+  margin: 0 auto 1em auto;
+}
+#middle-east-dialogue-content {
+  display: none;
+}
+
+/** GET INVOLVED section **/
+
+
+SECTION#ribbon_right {
+  background: #FFB74D;
+  color: rgb(64,64,64);
+}
+SECTION#ribbon_right DIV.row > * {
+  width: 100%;
+}
+SECTION#ribbon_right DIV.row DIV { padding: 0 20%; }
+SECTION#ribbon_right H2 {
+  font-size: 45px;
+  padding: 0.5em;
+
+}
+SECTION#ribbon_right IMG {
+  width: 80%;
+    max-height: 100px;
+    object-fit: cover;
+    border: 4px solid rgba(0,0,0,20%);
+    border-style: dashed;
+margin-bottom: 1em;
+}
+
+
+SECTION#ribbon_right DIV.col-md-3 {
+  margin-top: 1em;
+}
+SECTION#ribbon_right DIV.col-md-3 a.btn {
+  float: none;
+}
+
+
+.supporter-logo {
+	width: 150px;
+	height: 150px;
+	background: white;
+	/*border-radius: 50%;
+	overflow: hidden;*/
+	float: left;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+.supporter-logo IMG {
+	width: 100%;
+}
+.supporter-wrap {
+	clear: both;
+	min-height: 200px;
+	margin-bottom: 25px;
+	background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 4px;
+	text-align: left;
+}
+.supporter-wrap H3 {
+	clear: none;
+	margin-top: 0;
+}
+.supporter-wrap P {
+	line-height: 1.3em;
+}
+.separator-one {
+	background: #23282d;
+}
+
+@media (max-width: 767px) {
+	.menu-align-center .responsive-logo > a {
+		width: 75%;
+	}
+}
+
+/** Who We Are Page **/
+DIV.wp-block-image.profile-pic IMG {
+  border-radius: 50%;
+  border: 4px solid whitesmoke;
+  box-shadow: grey 1px 2px 6px 0px;
+}
+
+/** Resources page **/
+DIV.listpost-content-wrap FOOTER {
+  display: none;
+}
+
+/** MEMBERS AREA **/
+BODY.page-template-template-members-area-php FOOTER.entry-footer {
+	display: none;
+}
+BODY.page-template-template-members-area-php article.hentry {
+	padding-bottom: 0;
+	float: none;
+	border: 0;
+}
+BODY.page-template-template-members-area-php article.hentry .entry-content {
+	margin-top: 0;
+}
+BODY.page-template-template-members-area-php article.hentry P {
+	margin-bottom: 0;
+}
+BODY.page-template-template-members-area-php SECTION {
+	margin-bottom: 1em;
+}
+BODY.page-template-template-members-area-php SECTION H2 {
+	text-align: left;
+}
+BODY.page-template-template-members-area-php SECTION H3 {
+	margin-bottom: 0;
+}
+BODY.page-template-template-members-area-php ARTICLE P {
+	margin-bottom: 1em;
+}
+SECTION.members-blogs {
+	float: left; width: 58%;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	padding: 20px;
+}
+SECTION.members-blogs H2 {
+	border-bottom: 2px solid #3ab0e2;
+}
+SECTION.members-blogs ARTICLE {
+	border: 0px solid #3ab0e2;
+	border-bottom-width: 1px;
+	margin-bottom: 1em;
+}
+SECTION.members-blogs P.date {
+	margin: 0;
+}
+SECTION.members-assets {
+	float: right; width: 40%;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	padding: 20px;
+}
+SECTION.members-assets H2 {
+	border-bottom: 2px solid #34d293;
+}
+SECTION.members-assets ARTICLE {
+	border: 0px solid #34d293;
+	border-bottom-width: 1px;
+	margin-bottom: 1em;
+}
+SECTION.members-network {
+	clear: both;
+}
+SECTION.members-network H2 {
+	border-bottom: 2px solid #e96656;
+}
+SECTION.members-network H3 {
+	text-align: left;
+}
+SECTION.members-network IMG.logo {
+	float: left;
+	margin-top: -2em;
+}
+SECTION.members-network .organization-mini-profile {
+	text-align: left;
+}
+SECTION.members-network .organization-mini-profile P {
+	margin-top: 2em;
+}
+SECTION.members-network ARTICLE {
+	border: 0px solid #e96656;
+	border-bottom-width: 1px;
+	margin-bottom: 1em;
+}
+SECTION.members-network .more {
+	clear: both;
+	padding: 1em;
+	border: 1px solid rgba(0,0,0,0.05);
+}
+
+DIV.members-footer UL {
+
+}
+DIV.members-footer UL LI {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+
+@media (max-width: 767px) {
+	BODY.page-template-template-members-area-php SECTION {
+		width: 100% !important;
+		float: none !important;
+	}
+}
